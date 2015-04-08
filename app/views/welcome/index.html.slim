@@ -1,1 +1,6 @@
-h3= 'Welcome'
+h3= t('.title')
+- if current_user
+  p= t('.welcome_user', user: current_user.name)
+  p= link_to :sign_out, signout_path
+- else
+  = link_to :sign_in, "/auth/github"

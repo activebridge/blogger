@@ -1,0 +1,5 @@
+en:
+  welcome:
+    index:
+      title: Welcome
+      welcome_user: 'Welcome %{user}'

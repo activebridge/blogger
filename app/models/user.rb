@@ -6,4 +6,9 @@ class User < ActiveRecord::Base
       user.name = auth['info']['name']
     end
   end
+
+  def self.gather_repo_data(auth)
+    client = Octokit::Client.new(access_token: auth['credentials']['token'])
+    client.repositories
+  end
 end

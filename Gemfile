@@ -15,6 +15,7 @@ gem 'slim-rails',         '~> 3.0.1'
 gem 'simple_form',        '~> 3.1.0'
 gem 'omniauth',           '~> 1.2.2'
 gem 'omniauth-github',    '1.1.1'
+gem 'octokit'
 gem 'thelpers',           '~> 0.0.1'
 
 group :development, :test do
